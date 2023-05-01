@@ -11,7 +11,7 @@ node('built-in')
 
     stage('Continuous Deployment') 
 	{
-           sh label: '', script: 'scp /home/ubuntu/.jenkins/workspace/ScriptedPipeline/webapp/target/webapp.war   ubuntu@172.31.39.206:/var/lib/tomcat9/webapps/qaenv.war'
+           sh label: '', script: 'scp /home/ubuntu/.jenkins/workspace/firstjob_loans/webapp/target/webapp.war   ubuntu@172.31.39.206:/var/lib/tomcat9/webapps/qaenv.war'
 	}
 
 }
